@@ -270,6 +270,19 @@ FlibeFluidProperties::e_from_p_T(Real pressure, Real temperature) const
   return cp * temperature - pressure * v;
 }
 
+Real
+FlibeFluidProperties::p_from_v_e(Real v, Real e) const
+{
+  Real temperature = T_from_v_e(v, e);
+  return (e - h_from_p_T(0, temperature)) / v;
+}
+
+Real
+FlibeFluidProperties::rho_from_p_T(Real p, Real T) const
+{
+  return rho_from_p_T;
+}
+
 void
 FlibeFluidProperties::e_from_p_T(
     Real pressure, Real temperature, Real & e, Real & de_dp, Real & de_dT) const
