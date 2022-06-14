@@ -42,7 +42,7 @@ SinglePhaseFluidProperties::s_from_p_T(Real p, Real T, Real & s, Real & ds_dp, R
   Real v, e, dv_dp, dv_dT, de_dp, de_dT;
   v_e_from_p_T(p, T, v, dv_dp, dv_dT, e, de_dp, de_dT);
 
-  Real ds_dv, ds_de; d
+  Real ds_dv, ds_de;
   s_from_v_e(v, e, s, ds_dv, ds_de);
   ds_dp = ds_dv * dv_dp + ds_de * de_dp;
   ds_dT = ds_dv * dv_dT + ds_de * de_dT;
