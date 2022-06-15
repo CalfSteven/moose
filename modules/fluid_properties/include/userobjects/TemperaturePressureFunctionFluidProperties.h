@@ -13,7 +13,7 @@
 #include "Function.h"
 
 /**
- * Fluid properties provided as multipul-variable functions of temperature, pressure that are parameterized
+ * Fluid properties provided as multiple-variable functions of temperature, pressure that are parameterized
  * in time, where $t$ is used to indicate temperature and &p& is used to indicate pressure.
  * This source is made so it is allowed to take in both specific volume, internal energy formulations
  * and temperature, pressure formulations. The Density, Viscosity and thermal conductivity time derivative
